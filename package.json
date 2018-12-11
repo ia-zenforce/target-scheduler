@@ -1,0 +1,19 @@
+{
+  "name": "claudia-target-event-scheduling",
+  "version": "1.0.0",
+  "main": "lambda.js",
+  "scripts": {
+    "start": "claudia create --region us-east-1 --handler lambda.handler",
+    "test": "claudia test-lambda",
+    "update": "claudia update --cache-api-config claudiaEventsCached",
+    "schedule":
+      "claudia add-scheduled-event --event test.json --name target-sched --cron '0 0 1 * ? *'"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "nodemailer": "^4.6.7"
+  }
+}

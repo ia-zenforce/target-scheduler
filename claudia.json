@@ -1,0 +1,7 @@
+{
+  "lambda": {
+    "role": "claudia-target-event-scheduling-executor",
+    "name": "claudia-target-event-scheduling",
+    "region": "us-east-1"
+  }
+}
